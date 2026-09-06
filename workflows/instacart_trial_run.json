@@ -1,0 +1,25 @@
+resources:
+  jobs:
+    Instacart_Trial_Run:
+      name: Instacart Trial Run
+      tasks:
+        - task_key: audit_table_creation
+          sql_task:
+            query:
+              query_id: e2b177a4-f888-47b2-b63a-7db9999a3307
+            warehouse_id: 0faac130abaa60d0
+        - task_key: instacart_pipeline
+          depends_on:
+            - task_key: audit_table_creation
+          pipeline_task:
+            pipeline_id: 50d47850-7bd6-45c3-a95a-bc53e71063b1
+        - task_key: audit_log
+          depends_on:
+            - task_key: instacart_pipeline
+          sql_task:
+            query:
+              query_id: 0350af4b-aa2c-4d76-824d-45caa4e233e2
+            warehouse_id: 0faac130abaa60d0
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
