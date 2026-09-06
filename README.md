@@ -85,8 +85,7 @@ instacart-databricks-medallion-pipeline/
 - **Data Engineering backup dancers**:
 [@shienaaaargh](https://github.com/shienaaaargh) — Pipeline replication, end-to-end validation, Gold layer analytics, and Databricks dashboard creation.
 [@czekinah] (https://github.com/czekinah) - Code development, pipeline validation, instructor coordination, project alignment, and supplementary research.
-[@go-viaaa] (https://github.com/go-viaaa) - Documentation review and project support.
-[@merryjoytalento-cmd] ([https://github.com/go-viaaa](https://github.com/merryjoytalento-cmd)) - Raw data profiling, documentation review and project support.
+[@go-viaaa] (https://github.com/go-viaaa) and [@merryjoytalento-cmd] (https://github.com/merryjoytalento-cmd)) - Raw data profiling, documentation review and project support.
 ---
 
 <div align="center">
